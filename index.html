@@ -2492,10 +2492,7 @@
       // Auto-detect backend URL
       // file:// → hostname is "", localhost dev → "localhost", production → domain
       const _h = window.location.hostname;
-      const API_BASE =
-        !_h || _h === "localhost" || _h === "127.0.0.1"
-          ? "http://localhost:3001"
-          : "https://centurion.gaursonprojects.in";
+      const API_BASE = "https://pw-backend-zux7.vercel.app"
 
       function downloadBrochure() {
         const a = document.createElement("a");
