@@ -2488,11 +2488,7 @@
         });
       });
 
-      // Lead form submit — submits to Google Sheets then downloads brochure PDF
-      // Auto-detect backend URL
-      // file:// → hostname is "", localhost dev → "localhost", production → domain
-      const _h = window.location.hostname;
-      const API_BASE = "https://pw-backend-zux7.vercel.app"
+      const API_BASE = "https://alaris-back.vercel.app"
 
       function downloadBrochure() {
         const a = document.createElement("a");
